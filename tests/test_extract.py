@@ -8,3 +8,5 @@ def test_extract_creates_file():
     df = pd.read_csv("extracted.csv")
     assert "id" in df.columns
     assert "name" in df.columns
+
+print("ETL Done!")
