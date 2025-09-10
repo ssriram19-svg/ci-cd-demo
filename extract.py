@@ -8,10 +8,10 @@ def extract():
     }
     df = pd.DataFrame(data)
     
-    # Intentional break: writing wrong file name
-    df.to_csv("wrong_file.csv", index=False)
+    # Correct file name as expected by test_extract.py
+    df.to_csv("extracted.csv", index=False)
     
-    print("Extraction complete (but file name is wrong!)")
+    print("Extraction complete and saved to extracted.csv")
 
 if __name__ == "__main__":
     extract()
